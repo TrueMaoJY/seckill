@@ -66,6 +66,7 @@ class SeckillApplicationTests {
             Boolean result = (Boolean) redisTemplate.execute(script, Collections.singletonList("k1"), value);
             System.out.println(result);
             System.out.println("冲突合并master");
+            System.out.println("冲突合并hot-fix");
         }else {
             System.out.println("有线程请使用，请稍后");
         }
