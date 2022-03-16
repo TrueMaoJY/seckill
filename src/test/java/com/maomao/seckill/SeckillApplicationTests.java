@@ -65,6 +65,7 @@ class SeckillApplicationTests {
             System.out.println(valueOperations.get("k1"));
             Boolean result = (Boolean) redisTemplate.execute(script, Collections.singletonList("k1"), value);
             System.out.println(result);
+            System.out.println("hello,git");
         }else {
             System.out.println("有线程请使用，请稍后");
         }
